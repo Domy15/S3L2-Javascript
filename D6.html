@@ -108,7 +108,7 @@
        Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
       */
 
-      const changeUrls = function () {const change = document.querySelectorAll("a :not (footer a)");change.innerHTML = "https://www.google.com";}
+      const changeUrls = function () {const change = document.querySelectorAll("a:not(footer a)");change.forEach((element) => element.href = "https://www.google.com");}
 
       changeUrls();
 
